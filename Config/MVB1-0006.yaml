@@ -1,0 +1,68 @@
+%YAML:1.0
+#--------------------------------------------------------------------------------------------
+# IMU Parameters   if you want use imu,set 'USEIMU' true,  
+#--------------------------------------------------------------------------------------------
+
+USEIMU: false
+
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters. 
+#--------------------------------------------------------------------------------------------
+
+Camera_fx: 468
+Camera_fy: 468
+Camera_cx: 390
+Camera_cy: 254
+Camera_width: 752
+Camera_height: 480
+Camera_bf: 28.2
+
+
+
+Camera_fps: 20.0
+
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera_RGB: 1
+
+# Close/Far threshold. Baseline times.
+ThDepth:35
+
+# Deptmap values factor 
+DepthMapFactor: 5000.0
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+# ORB Extractor: Number of features per image
+ORBextractor_nFeatures: 1000
+
+# ORB Extractor: Scale factor between levels in the scale pyramid 	
+ORBextractor_scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid	
+ORBextractor_nLevels: 8
+
+# ORB Extractor: Fast threshold
+# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
+# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
+# You can lower these values if your images have low contrast			
+ORBextractor_iniThFAST: 20
+ORBextractor_minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer_KeyFrameSize: 0.05
+Viewer_KeyFrameLineWidth: 1
+Viewer_GraphLineWidth: 0.9
+Viewer_PointSize:2
+Viewer_CameraSize: 0.08
+Viewer_CameraLineWidth: 3
+Viewer_ViewpointX: 0
+Viewer_ViewpointY: -0.7
+Viewer_ViewpointZ: -1.8
+Viewer_ViewpointF: 500
+
